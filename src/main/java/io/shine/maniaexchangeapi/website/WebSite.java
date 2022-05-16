@@ -1,5 +1,9 @@
 package io.shine.maniaexchangeapi.website;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import io.shine.maniaexchangeapi.tag.ManiaTag;
 import lombok.Getter;
 import lombok.SneakyThrows;
@@ -14,8 +18,15 @@ public abstract class WebSite {
 
     public abstract String getEndPoint();
 
+    @SneakyThrows
     public List<ManiaTag> getTags() {
         List<ManiaTag> tags = new ArrayList<>();
+        Response response = makeRequest("tags/gettags", null);
+        Gson gson = new Gson();
+        JsonArray jsonArray = new JsonParser().parse(response.body().string()).getAsJsonArray();
+        jsonArray.forEach(j -> {
+            tags.add(gson.fromJson(j, ManiaTag.class));
+        });
         return tags;
     }
 

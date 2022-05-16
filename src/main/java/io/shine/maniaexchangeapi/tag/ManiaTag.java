@@ -1,12 +1,10 @@
 package io.shine.maniaexchangeapi.tag;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@AllArgsConstructor
 public class ManiaTag {
     @Getter
-    private String name,color;
+    private String Name,Color;
     @Getter
     private int ID;
 
