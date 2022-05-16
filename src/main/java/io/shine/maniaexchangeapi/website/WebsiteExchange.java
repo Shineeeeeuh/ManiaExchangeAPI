@@ -1,4 +1,7 @@
 package io.shine.maniaexchangeapi.website;
 
-public interface WebsiteExchange {
+public enum WebsiteExchange {
+    TM2();
+
+
 }
