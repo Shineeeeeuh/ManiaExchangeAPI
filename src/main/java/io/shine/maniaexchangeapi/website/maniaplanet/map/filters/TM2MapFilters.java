@@ -4,7 +4,7 @@ public class TM2MapFilters {
     private String base;
 
     public TM2MapFilters(){
-        base = "?";
+        base = "";
     }
 
     public TM2MapFilters limit(int limit){
@@ -17,10 +17,21 @@ public class TM2MapFilters {
         return this;
     }
 
+    public TM2MapFilters name(String name){
+        base += "&trackname="+name;
+        return this;
+    }
+
+    public TM2MapFilters author(String author){
+        base += "&author="+author;
+        return this;
+    }
+
+
 
 
     @Override
     public String toString() {
-        return base.replaceFirst("&", "");
+        return base;
     }
 }
