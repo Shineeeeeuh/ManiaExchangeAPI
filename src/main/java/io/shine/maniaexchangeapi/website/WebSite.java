@@ -13,7 +13,7 @@ public abstract class WebSite {
     private OkHttpClient client = new OkHttpClient().newBuilder().followRedirects(false).build();
 
     public abstract String getEndPoint();
-    
+
     public List<ManiaTag> getTags() {
         List<ManiaTag> tags = new ArrayList<>();
         return tags;
@@ -24,6 +24,5 @@ public abstract class WebSite {
         Request.Builder builder = new Request.Builder().url(getEndPoint()+path);
         if(body != null) builder.post(body);
         return client.newCall(builder.build()).execute();
-
     }
 }
