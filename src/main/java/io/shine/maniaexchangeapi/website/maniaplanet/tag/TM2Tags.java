@@ -36,7 +36,14 @@ public enum TM2Tags {
     Obstacle(27, "Obstacle", ""),
     Transitional(28, "Transitional", ""),
     Grass(29, "Grass", "00a607"),
-    Competitive(30, "Competitive", "");
+    Competitive(30, "Competitive", ""),
+    Ice(31, "Ice", "0a8885"),
+    Glass(32, "Glass", ""),
+    Backwards(33, "Backwards", ""),
+    Freewheel(34, "Freewheel", "f34247"),
+    Signature(35, "Signature", "edc12f"),
+    Freestyle(36, "Freestyle", ""),
+    Wood(37, "Wood", "");
 
     @Getter
     private int id;
