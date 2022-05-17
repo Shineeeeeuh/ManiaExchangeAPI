@@ -22,7 +22,8 @@ public enum TM2Tags {
     Nascar(13, "Nascar", "ac0000"),
     SpeedFun(14, "SpeedFun", ""),
     Dirt(15, "Dirt", "5a4200"),
-    Stunt(16, "Stunt", "");
+    Stunt(16, "Stunt", ""),
+    Platform(17, "Platform", "");
 
     @Getter
     private int id;
