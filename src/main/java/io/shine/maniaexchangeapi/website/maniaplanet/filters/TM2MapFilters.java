@@ -27,11 +27,9 @@ public class TM2MapFilters {
         return this;
     }
 
-
-
-
     @Override
     public String toString() {
         return base;
     }
+
 }
