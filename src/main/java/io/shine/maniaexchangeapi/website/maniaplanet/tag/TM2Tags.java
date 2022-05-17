@@ -3,6 +3,9 @@ package io.shine.maniaexchangeapi.website.maniaplanet.tag;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.Arrays;
+import java.util.Optional;
+
 @AllArgsConstructor
 public enum TM2Tags {
     //BASED ON https://tm.mania.exchange/api/tags/gettags
@@ -49,4 +52,8 @@ public enum TM2Tags {
     private int id;
     @Getter
     private String name, color;
+
+    public static Optional<TM2Tags> getTag(int id){
+        return Arrays.stream(values()).filter(tag -> id == tag.getId()).findFirst();
+    }
 }
