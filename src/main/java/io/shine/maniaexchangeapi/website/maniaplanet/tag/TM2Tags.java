@@ -15,7 +15,14 @@ public enum TM2Tags {
     PF(6, "Press Forward", ""),
     SpeedTech(7, "Speedtech", ""),
     MultiLap(8, "MultiLap", ""),
-    OffRoad(9, "Offroad", "805000");
+    OffRoad(9, "Offroad", "805000"),
+    Trial(10, "Trial", ""),
+    Mixed(11, "Mixed", ""),
+    ZrT(12, "ZrT", "0e9e00"),
+    Nascar(13, "Nascar", "ac0000"),
+    SpeedFun(14, "SpeedFun", ""),
+    Dirt(15, "Dirt", "5a4200"),
+    Stunt(16, "Stunt", "");
 
     @Getter
     private int id;
