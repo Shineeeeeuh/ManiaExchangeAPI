@@ -1,5 +1,6 @@
 package io.shine.maniaexchangeapi.website.maniaplanet.filters;
 
+import io.shine.maniaexchangeapi.website.maniaplanet.difficulty.TM2Difficulties;
 import io.shine.maniaexchangeapi.website.maniaplanet.tag.TM2Tags;
 
 import java.util.Arrays;
@@ -34,6 +35,11 @@ public class TM2MapFilters {
 
     public TM2MapFilters tags(TM2Tags... tags){
         base += "&tags="+Arrays.stream(tags).map(tag -> String.valueOf(tag.getId())).collect(Collectors.joining(","));
+        return this;
+    }
+
+    public TM2MapFilters difficulty(TM2Difficulties difficulty){
+        base +="&difficulty="+difficulty.getValue();
         return this;
     }
 
