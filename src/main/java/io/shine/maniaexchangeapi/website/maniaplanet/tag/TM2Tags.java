@@ -31,7 +31,12 @@ public enum TM2Tags {
     Water(22, "Water", "0087bc"),
     Remake(23, "Remake", ""),
     Mini(24, "Mini", ""),
-    SpeedDrift(25, "SpeedDrift", "");
+    SpeedDrift(25, "SpeedDrift", ""),
+    MiniGame(26, "MiniGame", ""),
+    Obstacle(27, "Obstacle", ""),
+    Transitional(28, "Transitional", ""),
+    Grass(29, "Grass", "00a607"),
+    Competitive(30, "Competitive", "");
 
     @Getter
     private int id;
