@@ -7,7 +7,9 @@ import lombok.Getter;
 public enum TM2Tags {
     //BASED ON https://tm.mania.exchange/api/tags/gettags
 
-    Race(1, "Race", "");
+    Race(1, "Race", ""),
+    FullSpeed(2, "FullSpeed", "");
+    
     @Getter
     private int id;
     @Getter
