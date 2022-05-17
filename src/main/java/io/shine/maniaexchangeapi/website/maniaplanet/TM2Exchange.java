@@ -9,7 +9,7 @@ import java.util.List;
 public class TM2Exchange extends WebSite {
     @Override
     public String getEndPoint() {
-        return "https://tm.mania.exchange/api/";
+        return "https://tm.mania.exchange/";
     }
 
     public List<TM2Map> searchMaps(){
