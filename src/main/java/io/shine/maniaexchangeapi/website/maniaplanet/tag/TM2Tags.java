@@ -9,7 +9,7 @@ public enum TM2Tags {
 
     Race(1, "Race", ""),
     FullSpeed(2, "FullSpeed", "");
-    
+
     @Getter
     private int id;
     @Getter

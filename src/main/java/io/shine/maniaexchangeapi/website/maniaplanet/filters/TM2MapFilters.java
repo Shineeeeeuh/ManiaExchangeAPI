@@ -1,4 +1,4 @@
-package io.shine.maniaexchangeapi.website.maniaplanet.map.filters;
+package io.shine.maniaexchangeapi.website.maniaplanet.filters;
 
 public class TM2MapFilters {
     private String base;
