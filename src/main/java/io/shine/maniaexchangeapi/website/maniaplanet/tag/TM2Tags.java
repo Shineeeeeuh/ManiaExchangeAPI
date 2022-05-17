@@ -23,7 +23,15 @@ public enum TM2Tags {
     SpeedFun(14, "SpeedFun", ""),
     Dirt(15, "Dirt", "5a4200"),
     Stunt(16, "Stunt", ""),
-    Platform(17, "Platform", "");
+    Platform(17, "Platform", ""),
+    Bumper(18, "Bumper", ""),
+    Scenery(19, "Scenery", ""),
+    Kacky(20, "Kacky", ""),
+    Endurance(21, "Endurance", ""),
+    Water(22, "Water", "0087bc"),
+    Remake(23, "Remake", ""),
+    Mini(24, "Mini", ""),
+    SpeedDrift(25, "SpeedDrift", "");
 
     @Getter
     private int id;
