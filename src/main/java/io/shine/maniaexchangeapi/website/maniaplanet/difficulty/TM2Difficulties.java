@@ -2,14 +2,18 @@ package io.shine.maniaexchangeapi.website.maniaplanet.difficulty;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 
 @AllArgsConstructor
 public enum TM2Difficulties {
-    Beginner("Beginner", 0);
+    Beginner("Beginner", 0),
+    Intermediate("Intermediate", 1),
+    Advanced("Advanced", 2),
+    Expert("Expert", 3),
+    Lunatic("Lunatic", 4),
+    Impossible("Impossible", 5);
 
     @Getter
     private String name;
-    @Setter
+    @Getter
     private int value;
 }
