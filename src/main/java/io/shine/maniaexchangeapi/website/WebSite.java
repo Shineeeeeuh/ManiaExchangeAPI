@@ -11,9 +11,21 @@ public abstract class WebSite {
     public abstract String getEndPoint();
 
     @SneakyThrows
-    public Response makeRequest(String path, RequestBody body){
+    public Response getRequest(String path){
         Request.Builder builder = new Request.Builder().url(getEndPoint()+path);
-        if(body != null) builder.post(body);
         return client.newCall(builder.build()).execute();
     }
+
+    @SneakyThrows
+    public Response postRequest(String path, RequestBody body){
+        Request.Builder builder = new Request.Builder().url(getEndPoint()+path).post(body);
+        return client.newCall(builder.build()).execute();
+    }
+
+    @SneakyThrows
+    public Response deleteRequest(String path, RequestBody body){
+        Request.Builder builder = new Request.Builder().url(getEndPoint()+path).delete(body);
+        return client.newCall(builder.build()).execute();
+    }
+
 }
