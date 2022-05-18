@@ -9,5 +9,7 @@ public class TM2Map {
     public String username,mapName,styleName,tagName, replayWRUsername;
     @Getter
     private long trackID,userID;
+    @Getter
+    private int awards;
 
 }

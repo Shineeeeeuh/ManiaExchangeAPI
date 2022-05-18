@@ -6,7 +6,7 @@ import okhttp3.*;
 
 public abstract class WebSite {
     @Getter
-    private OkHttpClient client = new OkHttpClient().newBuilder().followRedirects(false).build();
+    private static final OkHttpClient client = new OkHttpClient().newBuilder().followRedirects(false).build();
 
     public abstract String getEndPoint();
 
